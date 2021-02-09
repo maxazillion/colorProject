@@ -8,7 +8,7 @@ paletteDivs.forEach((paletteDiv, index) => {
     "background-color",
     paletteStyles.getPropertyValue(`--${index}`)
   );
-  paletteDiv.addEventListener("click", function handleClick() {
+  paletteDiv.addEventListener("mouseover", function handleClick() {
     display.style.setProperty("background-color", this.style.backgroundColor);
     console.log("this", this.style, "clicked");
   });
